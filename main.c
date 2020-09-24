@@ -7,9 +7,10 @@ int main(int argc, char *argv[]) {
 	
 	int a;
 	
-	printf("input the second : ");
+	printf("input the year : ");
 	scanf("%i", &a);
 	
-	printf("the time is %i : %i", a/60, a%60);
+
+	printf("is the year %i the leap year? : %i", a, (a%4==0&&a%100!=0) || (a%400==0) );
 	return 0;
 }
